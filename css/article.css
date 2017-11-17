@@ -1,0 +1,294 @@
+@media (max-width: 950px) {
+  #article-wrap,
+  #issue-wrap {
+    margin-left: 0;
+  }
+
+  #issueSideBar {
+    position: inherit;
+    float: none;
+  }
+
+  #main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.fullWrap {
+  position: relative;
+  border: 1px solid rgba(24, 35, 62, .3);
+}
+
+.insideWrap {
+  min-height: 965px;
+  overflow: auto;
+}
+/*Pages*/
+.pages {
+  display: none;
+}
+/*Main*/
+.main {
+  float: left;
+  position: relative;
+  margin-bottom: 30px;
+  font-family: montserratlight;
+  font-weight: 300;
+}
+
+.main .Title {
+  font-size: 24px;
+}
+
+.main .nonFoot {
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 50px;
+  padding-bottom: 90px;
+  width: 40%;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.main .authorSub {
+    font-size: 15px;
+    text-align: right;
+}
+
+
+.cornerTitle {
+    font-size: 11px;
+    margin: 10px 0 0 10px;
+}
+
+.cornerAuthors {
+    font-size: 11px;
+    margin: -15px 10px 0 0;
+    text-align: right;
+}
+
+/*Pagination*/
+.relative {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination {
+    bottom: 70px;
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 17px;
+    background-color: white;
+}
+
+.pagination .increment {
+  display: flex;
+  font-size: 9px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.pagination .prev {
+  float: left;
+  margin-left: 100px;
+}
+
+.pagination .next {
+  float: right;
+  margin-right: 100px;
+}
+
+.pagination .prevPage {
+  margin-left: 14px;
+}
+
+.pagination .nextPage {
+  margin-right: 14px;
+}
+
+.pagination .pagBody {
+  position: relative;
+}
+
+.pageNums {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+.pageSelect {
+  display: inline;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.ArrowBox {
+  display: inline-block;
+  border: solid 1px #a4a4a4;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  cursor: hand;
+  box-sizing: border-box;
+  padding-right: 13px;
+}
+
+#rightArrow {
+  transform: rotate(45deg);
+  left: -1px;
+}
+
+#leftArrow {
+  transform: rotate(-135deg);
+  margin-left: 16px;
+}
+
+.pointerNum {
+  margin: 15px 0 0 14px;
+  border: solid #49494A;
+  border-width: 2.5px 2.5px 0 0;
+  width: 7px;
+  height: 7px;
+}
+/*Footer*/
+.foot {
+  font-size: 9px;
+  font-family: montserratlight;
+}
+
+.foot_wrap {
+  width: 28%;
+  float: right;
+  line-height: 14px;
+}
+
+.main .foot_wrap {
+  position: absolute;
+  padding-bottom: 90px;
+  bottom: 0;
+  right: 0;
+  margin-right: 100px;
+    margin-top: 10px;
+    border-top: 1px solid black;
+}
+
+.articleFooter {
+    /*text-align: center;*/
+    margin-left: 100px;
+    font-size: 11px;
+}
+
+
+.articleFooter .num {
+    text-align: right;
+    margin-left: auto;
+    margin-right: 100px;
+    margin-top: -14px;
+}
+
+@media (max-width: 1300px) {
+    .main .nonFoot {
+        width: calc(100% - 150px);
+        margin-left: 75px;
+    }
+
+    .articleFooter {
+        margin-left: 75px;
+    }
+
+    .articleFooter .num {
+        margin-right: 75px;
+    }
+
+    .foot_wrap {
+        width: 100%;
+        float: none;
+    }
+
+    .main .foot_wrap {
+        position: static;
+        margin-right: 0;
+    }
+    .pagination .prev {
+        margin-left: 75px;
+    }
+
+    .pagination .next {
+        margin-right: 75px;
+    }
+}
+
+
+@media (max-width: 655px) {
+  .pagination {
+    bottom: 45px;
+  }
+
+  .pagination .prev {
+    margin-left: -1px;
+  }
+
+  .pagination .next {
+    margin-right: -1px;
+  }
+
+  .pageNums {
+    width: 150px;
+  }
+
+  .main .nonFoot {
+    width: calc(100% - 60px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .articleFooter {
+      margin-left: 30px;
+  }
+
+    .articleFooter .num {
+        margin-right: 30px;
+    }
+}
+
+
+
+
+@media (max-width:1150px){
+  .nextPage,.prevPage{
+    display: none;
+  }
+}
+
+@media (max-width: 900px){
+  .nextPage,.prevPage{
+    display: block;
+  }
+}
+
+@media (max-width:835px){
+  .nextPage,.prevPage{
+    display: none;
+  }
+}
+
+@media (max-width: 580px){
+  .nextPage,.prevPage{
+    display: block;
+  }
+}
+
+@media (max-width:505px){
+  .nextPage,.prevPage{
+    display: none;
+  }
+}
